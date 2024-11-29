@@ -1,0 +1,234 @@
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 60%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #0056b3;
+}
+
+.search-results {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.search-result-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.search-result-item span {
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+}
+
+.search-result-item button {
+    padding: 5px 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-result-item button:hover {
+    background-color: #45a049;
+}
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+}
+
+.popup-content h2 {
+    margin-top: 0;
+}
+
+.popup-content img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.popup-content p {
+    margin-bottom: 10px;
+}
+
+.popup-content button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup-content button:first-of-type {
+    background-color: #4caf50;
+    color: white;
+}
+
+.popup-content button:first-of-type:hover {
+    background-color: #45a049;
+}
+
+.popup-content button:last-of-type {
+    background-color: #f44336;
+    color: white;
+}
+
+.popup-content button:last-of-type:hover {
+    background-color: #d32f2f;
+}
+
+.add-entry-form {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.add-entry-form h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.add-entry-form input {
+    display: block;
+    margin: 10px 0;
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.add-entry-form input[readonly] {
+    background-color: #f9f9f9;
+}
+
+.add-entry-form button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-entry-form button:first-of-type {
+    background-color: #4caf50;
+    color: white;
+}
+
+.add-entry-form button:first-of-type:hover {
+    background-color: #45a049;
+}
+
+.add-entry-form button:last-of-type {
+    background-color: #f44336;
+    color: white;
+}
+
+.add-entry-form button:last-of-type:hover {
+    background-color: #d32f2f;
+}
+
+.edit-entry-form {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.edit-entry-form h2 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.edit-entry-form input {
+    display: block;
+    margin: 10px 0;
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.edit-entry-form button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-entry-form button:first-of-type {
+    background-color: #4caf50;
+    color: white;
+}
+
+.edit-entry-form button:first-of-type:hover {
+    background-color: #45a049;
+}
+
+.edit-entry-form button:last-of-type {
+    background-color: #f44336;
+    color: white;
+}
+
+.edit-entry-form button:last-of-type:hover {
+    background-color: #d32f2f;
+}
+
+.media-list {
+    margin-top: 20px;
+}
+
+body.popup-open {
+    overflow: hidden;
+}
